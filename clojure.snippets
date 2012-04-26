@@ -1,0 +1,62 @@
+snippet comm
+	(comment
+	  ${1}
+	  )
+snippet condp
+	(condp ${1:pred} ${2:expr}
+	  ${3})
+snippet defme
+	(defmethod ${1:name} ${2:match}
+	  [${3:args}]
+	  ${4})
+snippet defmu
+	(defmulti ${1:name} ${2:dispatch-fn})
+snippet defn
+	(defn ${1:name} ${2:
+	  "${3:doc-string}"
+	  }[${4:arg-list}]
+	  ${5})
+snippet defpro
+	(defprotocol ${1:Name}
+	  ${2})
+snippet defrec
+	(defrecord ${1:Name} [${2:fields}]
+	  ${3:Protocol}
+	  ${4})
+snippet deftype
+	(deftype ${1:Name} [${2:fields}]
+	  ${3:Protocol}
+	  ${4})
+snippet fn
+	(fn [${1:arg-list}] ${2})
+snippet if
+	(if ${1:test-expr}
+	  ${2:then-expr}
+	  ${3:else-expr})
+snippet impo
+	(:import [${1:package}])
+	& {:keys [${1:keys}] :or {${2:defaults}}}
+snippet let
+	(let [${1}])
+snippet letfn
+	(letfn [(${1:name) [${2:args}]
+	          ${3})])
+snippet method
+	(${1:name} [${2:this} ${3:args}]
+	  ${4})
+snippet ns
+	(ns ${1:name}
+	  ${2})
+snippet dotimes
+	(dotimes [_ 10]
+	  (time
+	    (dotimes [_ ${1:times}]
+	      ${2})))
+snippet pmethod
+	(${1:name} [${2:this} ${3:args}])
+snippet refer
+	(:refer-clojure :exclude [${1}])
+snippet req
+	(:require [${1:namespace} :as [${2}]])
+snippet use
+	(:use [${1:namespace} :only [${2}]])

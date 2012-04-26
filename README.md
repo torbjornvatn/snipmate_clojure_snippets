@@ -1,4 +1,1 @@
-snipmate_clojure_snippets
-=========================
-
-SnipMate snippets for SnipMate
+Clojure snippets for [SnipMate](https://github.com/msanders/snipmate.vim)
